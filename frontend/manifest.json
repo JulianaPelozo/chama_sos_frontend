@@ -1,0 +1,20 @@
+{
+  "short_name": "CHAMA SOS",
+  "name": "Sistema de Gerenciamento de Ocorrências CHAMA SOS",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#B71C1C",
+  "background_color": "#FFF5F5"
+}
