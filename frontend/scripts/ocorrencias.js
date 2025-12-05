@@ -204,13 +204,11 @@ function setupOcorrenciasEventListeners(ocorrencias) {
     }
   });
   
-  // Aplicar filtros
   document.getElementById('btnAplicarFiltros')?.addEventListener('click', aplicarFiltros);
   
-  // Exportar
   document.getElementById('btnExportar')?.addEventListener('click', exportarOcorrencias);
   
-  // Paginação
+   
   let paginaAtual = 1;
   const itensPorPagina = 10;
   
@@ -224,7 +222,6 @@ function setupOcorrenciasEventListeners(ocorrencias) {
     atualizarPagina(ocorrencias, paginaAtual, itensPorPagina);
   });
   
-  // Inicializar paginação
   atualizarPagina(ocorrencias, paginaAtual, itensPorPagina);
 }
 
@@ -307,7 +304,6 @@ function atualizarPagina(ocorrencias, pagina, itensPorPagina) {
   btnProxima.disabled = fim >= ocorrencias.length;
 }
 
-// Funções globais para ações
 window.verDetalhes = async function(id) {
   try {
     const ocorrencias = await fetchOcorrencias();
@@ -568,7 +564,6 @@ function imprimirOcorrencia(id) {
   janela.print();
 }
 
-// Funções auxiliares
 function getBadgeColor(tipo) {
   const cores = {
     'Incêndio': 'bg-danger',
