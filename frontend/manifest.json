@@ -1,20 +1,80 @@
 {
+  "name": "CHAMA SOS - Bombeiros",
   "short_name": "CHAMA SOS",
-  "name": "Sistema de Gerenciamento de Ocorrências CHAMA SOS",
+  "description": "Sistema de gerenciamento de ocorrências do Corpo de Bombeiros",
+  "start_url": "/dashboard.html",
+  "display": "standalone",
+  "background_color": "#B71C1C",
+  "theme_color": "#B71C1C",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["productivity", "utilities"],
   "icons": [
     {
-      "src": "/icons/icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
       "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "theme_color": "#B71C1C",
-  "background_color": "#FFF5F5"
+  "shortcuts": [
+    {
+      "name": "Nova Ocorrência",
+      "short_name": "Nova",
+      "description": "Criar nova ocorrência",
+      "url": "/dashboard.html?tab=nova",
+      "icons": [{ "src": "icons/add-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Ocorrências Ativas",
+      "short_name": "Ativas",
+      "description": "Ver ocorrências ativas",
+      "url": "/dashboard.html?tab=ocorrencias",
+      "icons": [{ "src": "icons/active-icon.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/dashboard.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
 }
